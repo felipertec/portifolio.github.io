@@ -1,0 +1,55 @@
+body, ul, p, li{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+.menu li a:hover{
+    color: yellow;
+}
+
+.apresentacao1{
+    display: flex;
+    justify-content: center;
+}
+
+.grid1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 80%;
+    margin: 0 auto;
+    grid-gap: 250px;
+}
+
+.grid1 img{
+    max-width: 70%;
+    border: 5px solid tomato;
+}
