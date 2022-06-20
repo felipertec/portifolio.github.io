@@ -41,6 +41,28 @@ a{
     justify-content: center;
 }
 
+.apresentacao1 h1::after{
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+
+.apresentacao_texto span::after{
+    content: "|";
+    margin-left: 5px;
+    opacity: 1;
+    animation: pisca .7s infinite;
+}
+@keyframes pisca {
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
 .grid1{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -53,3 +75,4 @@ a{
     max-width: 70%;
     border: 5px solid tomato;
 }
+
