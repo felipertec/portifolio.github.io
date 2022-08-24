@@ -1,6 +1,6 @@
 
-let texto1 = document.getElementById('apresentacao1');
-let texto2 = document.getElementById('apresentacao2');
+//let texto1 = document.getElementById('apresentacao1');
+//let texto2 = document.getElementById('apresentacao2');
 
 
 function typeWriter(elemento){
@@ -12,9 +12,9 @@ function typeWriter(elemento){
     
 }
 
-typeWriter(texto1);
+/*typeWriter(texto1);
 setTimeout(() =>{
     typeWriter(texto2);
     texto2.style.visibility = 'visible';
-}, 4000)
+}, 4000)*/
 
