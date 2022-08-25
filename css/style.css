@@ -6,6 +6,29 @@ body, ul, p, li{
     font-family: Arial;
 }
 
+body{
+    animation: changeBg 20s infinite alternate linear;
+    position: relative; 
+}
+
+@keyframes changeBg{
+    0%{
+        background-color: #ee6055;
+    }
+    25%{
+        background-color: #60d394;
+    }
+    50%{
+        background-color: #aaf683;
+    }
+    75%{
+        background-color: #ffd97d;
+    }
+    100%{
+        background-color: #ff9b85;
+    }
+}
+
 a{
     text-decoration: none;
     color: white;
@@ -17,6 +40,10 @@ a{
     justify-content: center;
     align-items: center;
     padding: 20px;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
 }
 
 .menu{
@@ -29,7 +56,7 @@ a{
 
 .menu li a{
     display: block;
-    padding: 10px;
+    padding: 20px;
 }
 
 .menu li a:hover{
@@ -44,6 +71,9 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20% 20% 0 8%;
+    text-align: center;
+    margin: 100px 0 20px 0;
 }
 
 /*.apresentacao1 h1::after{
@@ -91,30 +121,48 @@ main{
 .container1-item2 img{
     width: 50%;
     margin-left: 150px;
+    border: solid 5px;
+    border-radius: 50%;
 }
 
 .ferramentas{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    color: black;
+
+}
+
+.ferramentas .parede{
+    width: 30%;
+    height: 80px;
+    background-color: rgb(2, 22, 138);
+    margin: 0;
 }
 
 .ferramentas-texto{
-    margin: 0 0 50px 90px;
+    text-align: center;
+    margin: 50px auto 0 auto;
+    width: 50%;
+    height: 100px;
 }
 
 .container2{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+    align-content: center;
+    height: 600px;
     margin-bottom: 100px;
 }
 
 
 .container2-item1{
     width: 20%;
+    margin: 20px;
 }
 
 .container2-item1 img{
