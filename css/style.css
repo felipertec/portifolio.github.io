@@ -36,6 +36,10 @@ a{
     color: yellow;
 }
 
+main{
+    width: 100%;
+}
+
 .apresentacao1{
     display: flex;
     justify-content: center;
@@ -47,14 +51,14 @@ a{
     margin-left: 5px;
     opacity: 1;
     animation: pisca .7s infinite;
-}*/
+}
 
-/*.apresentacao_texto span::after{
+.apresentacao_texto span::after{
     content: "|";
     margin-left: 5px;
     opacity: 1;
     animation: pisca .7s infinite;
-}*/
+}
 @keyframes pisca {
     0%, 100%{
         opacity: 1;
@@ -62,7 +66,7 @@ a{
     50%{
         opacity: 0;
     }
-}
+}*/
 
 .container1{
     display: flex;
@@ -89,12 +93,49 @@ a{
     margin-left: 150px;
 }
 
+.ferramentas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ferramentas-texto{
+    margin: 0 0 50px 90px;
+}
+
 .container2{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    align-content: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
     margin-bottom: 100px;
 }
 
+
+.container2-item1{
+    width: 20%;
+}
+
+.container2-item1 img{
+    width: 150px;
+    height: 150px;
+}
+
+.container2-item2{
+    width: 20%;
+}
+
+.container2-item2 img{
+    width: 150px;
+    height: 150px;
+}
+
+.container2-item3{
+    width: 20%;
+}
+
+.container2-item3 img{
+    width: 150px;
+    height: 150px;
+}
